@@ -1,0 +1,28 @@
+/*
+ * NAMA              : FATAHILLAH SATRIA BIMA SENO
+ * KELAS             : IF-01
+ * NIM               : 10118039
+ * DESKRIPSI PROGRAM : Program ini berisi program untuk mencari nilai dari seorang mahasiswa  
+ */
+
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        NilaiAkhir nilai = new NilaiAkhir();
+        nilai.setQuiz(60);
+        nilai.setUts(80);
+        nilai.setUas(75);
+
+        System.out.printf("QUIZ \t\t= %.1f%n", nilai.getQuiz());
+        System.out.printf("UTS \t\t= %.1f%n", nilai.getUts());
+        System.out.printf("UAS \t\t= %.1f%n%n", nilai.getUas());
+        System.out.printf("Nilai Akhir \t= %.1f%n%n", nilai.nilaiAkhir());
+        System.out.printf("Index \t\t= %c%n", nilai.index());
+        System.out.printf("Keterangan\t= %s%n", nilai.Keterangan());
+
+    }
+
+}
